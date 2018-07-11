@@ -1,1 +1,35 @@
-This is the readme for my analysis and references the data I used and the final dataset I produced. This analysis takes [describe data and storage] and [explain what the analysis is]. The resulting dataset [explain how it is supposed to be used and where it is stored].
+Variables/Columns available in the raw data set
+1. Unique serial number of a vehicle
+2. Vehicle type (vehicle classes, light, medium or heavy)
+3. Trip origin Transporation Analysis Zone aka TAZ (total of 7000 unique TAZ)
+4. Trip Destination Transportation Analysis Zone (total of 7000 unique TAZ)
+5. Trip Purpose
+6. Trip start and end times
+7. Stoppage/parking time between trips
+8. Missing yet, the actual trip distance (working on getting it as it is the most useful and important variable)
+
+Since the raw data has both spatial and temporal elements, I will first focus on the temporal aspects before moving on to the spatial aspects.
+
+Phase 1 of analysis
+1. Get summary statistics by groups (vehicle, purpose): number of trips and trip distance. Plus other combinations depending on time of day, 
+trip origin and destination purpose
+2. Distributions/density plots: Identify opportunities where a vehicle can potentially refuel assuming a cut off of 30 minute parking time
+3. Get the count/number of vehicles that stop for more than 30 minutes by TAZ level
+
+Phase 2 of analysis
+Assuming I have the trip distances estimated 
+1. Repeat the summary statistics with trip distances
+2. Assume a cut off of 200 miles , this is the range a vehicle can travel on battery or hydrogen
+3. Identify vehicle trips and tours that meet the criterion of total tour (aggregate sum of individual trips) distance of 200 miles or less
+4. Convert the distance traveled into energy consumption in kWh or cuft of hydrogen, this is the energy demand
+
+Phase 3 of analysis
+Mainly spatial aspects
+1. Create heat maps for TAZ that have high density of trips starting or ending
+2. Create heat maps for TAZ by parking duration and the energy demand at the end of each trip
+3. Use shape files to depict how this energy demand and parking durations varies within a day or pick the top 10 hot spots to show where more
+refueling infrastructure is needed
+
+
+
+
