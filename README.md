@@ -1,5 +1,6 @@
-## STRIDE_project_template
-Setting up a template repository to manage STRIDE projects
+# STRIDE Project
+# Sesha Raghavan
+
 # Motivation
 The purpose of this project is to quantify the potential need for charging and refueling infrastructure for electric and hydrogen (H2) commercial vehicles, collectively addressed as zero emission vehicle refueling infrastructure for trucks(ZEVRI-T). These trucks are called ZEVs (zero emission vehicles) as they have no tail pipe emissions. There is tremendous interest from the state transportation agency to identify where to site these refueling (and charging infrastructure) and how should they be sized (rated capacity in kWh or cuft of H2). Once the needs are quantified, the next step is to spatially present these potential sites for refueling infrastructure. The spatio-temporal resolution is at a transportation analysis (TAZ) level. TAZ are smaller than zip codes but can be bigger or smaller than census tracts in terms of area. The project is entirely quantitative analysis and does not involve any hypothesis testing. 
 
