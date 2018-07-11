@@ -1,14 +1,14 @@
 
-    How will data be collected?
+    ## How will data be collected?
     The data was collected from a combination of on road sensors and survey data conducted by CalTrans.
-    Where will raw data be stored?
+    ## Where will raw data be stored?
     The raw data will be stored on my local or cloud drive.
-    How will the raw data be named?
-    The convention I am following so far is as follows
-    [Name of the Model]_[Year]_[Vehicle]_[SubRegion]_[Type]
+    ## How will the raw data be named?
+    ## The convention I am following so far is as follows
+    ###[Name of the Model]_[Year]_[Vehicle]_[SubRegion]_[Type]
     Example: CSTDM_2010_SDCVM_SCAG_VehicleTrip : California Statewide travel demand model, year 2010, short distance commercial vehicle model, southern california area of government
     VehicleLevel trip information. I might remove the CSTDM prefix as its going to be the same across all datasets
-    How will data be analyzed?
+    ## How will data be analyzed?
     The sequence I have in mind are as follows:
     1. For each vehicle type, tour purpose and time of day, get the trips made between TAZ. Have the trip start hour. trip end hour 
     and stoppage duration.
@@ -16,14 +16,15 @@
     3. Then the data will be analyzed based on a vehicle, tour purpose basis that looks into daily driving times, stoppage times, 
     and distance traveled.
     
-    How will analyzed data be named?
+   ## How will analyzed data be named?
     Similar to the file name : [Name of the Model]_[Year]_[Vehicle]_[SubRegion]_[Type] but will have an added suffix depending on the analysis metric 
     Example [Name of the Model]_[Year]_[Vehicle]_[SubRegion]_[Type]_[Metric]
     CSTDM_2010_SDCVM_SCAG_VehicleTrip_DailyDistanceQuantiles
-    How will the analysis be recorded?
-    Where will the analyzed data be stored?
+   ## How will the analysis be recorded?
+   Through a series of csv or xls files exported from 
+   ## Where will the analyzed data be stored?
     Local or shared drive.
-    How will the data be shared? Are there any considerations and restrictions for sharing your data?
+   ## How will the data be shared? Are there any considerations and restrictions for sharing your data?
     For the time being, can share the summarized results and high level analysis but raw data cannot be shared. Need to check with CalTrans. 
     We did not sign any NDA contract, they did us a huge favor by just sharing the data. My guess is that not much confidential information is available, so
     eventually can be shared.
